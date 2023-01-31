@@ -1,0 +1,7 @@
+git init: creates a new repository in the current directory
+git init: [project name]:  creates a new repository in a new directory
+git clone: copies a repository
+git clone: /path/o/repository: copies a local repository
+git add: <temp.txt> adds file to the staging area 
+git commit -m "message to go  with commit": creates a snapshot of the changes and saves it to the git directory
+git status: displays list of changed files & files that are yet to be staged or commited
