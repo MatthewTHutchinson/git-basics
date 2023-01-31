@@ -5,3 +5,4 @@ git clone: /path/o/repository: copies a local repository
 git add: <temp.txt> adds file to the staging area 
 git commit -m "message to go  with commit": creates a snapshot of the changes and saves it to the git directory
 git status: displays list of changed files & files that are yet to be staged or commited
+git push orgin /master: used to send local commits to master branch of remote repository
