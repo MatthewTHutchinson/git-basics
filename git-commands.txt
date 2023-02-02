@@ -1,8 +1,29 @@
 git init: creates a new repository in the current directory
-git init: [project name]:  creates a new repository in a new directory
-git clone: copies a repository
+git init [project name]:  creates a new repository in a new directory
+git clone: creates a copy of a repository
 git clone: /path/o/repository: copies a local repository
+git fetch: downloads a branch from another repository + all associated commits and files; doesnt try to integrate anything into local repository. Useful for inspecting changes before merging them with your project
 git add: <temp.txt> adds file to the staging area 
 git commit -m "message to go  with commit": creates a snapshot of the changes and saves it to the git directory
-git status: displays list of changed files & files that are yet to be staged or commited
+git commit --amend: lets you ammend the most recent commit; useful when you forget to stage a file or omit info from the commit message
+git status: displays list of changed files & files that are yet to be staged or commited; shows what's been going on from git add and git commit
 git push orgin /master: used to send local commits to master branch of remote repository
+git branch: general brnach administration tool; a branch is an isolated development environments within a single repository
+    git branch or git branch --list 
+    git branch <name>: creates a new branch, does not check it out 
+    git branch -d <name>: safe delete that prevents deleting if unmerged 
+    git branch -D <name>: Force delete, even if it has unmerged changes
+    git branch -m <newname>: renames current branch to newname
+    git branch -a: list all remote branches
+git checkout: use to checkout/navigate existing branches as well as checking out old commits and file revisions
+git merge
+git clean: removes untracked files from working directory; counterpart to git reset
+.gitignore: 
+git reset:
+git log: lets you explore the previous revisions of a project; 
+    git log -n <num> displays only num commits
+    git log --oneline: condense each commit to a single line; useful for high-level overview of project history
+    git log --stat: includes which files were altered and relative change in number of lines 
+    git log -p: displays patch representing each commit; shows full diff of each commit; most detailed view
+    
+git tag: used to capture a point in history that is used for a marked version release
